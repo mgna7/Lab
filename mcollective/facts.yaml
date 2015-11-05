@@ -1,0 +1,306 @@
+---
+aio_agent_build: 1.2.6
+aio_agent_version: 1.2.6
+architecture: x86_64
+augeas:
+  version: 1.4.0
+augeasversion: 1.4.0
+bios_release_date: 05/20/2014
+bios_vendor: Phoenix Technologies LTD
+bios_version: '6.00'
+blockdevice_fd0_size: 0
+blockdevice_sda_model: VMware Virtual S
+blockdevice_sda_size: 21474836480
+blockdevice_sda_vendor: VMware,
+blockdevices: fd0,sda
+boardmanufacturer: Intel Corporation
+boardproductname: 440BX Desktop Reference Platform
+boardserialnumber: None
+chassisassettag: No Asset Tag
+chassistype: Other
+custom_auth_conf: 'false'
+dhcp_servers:
+  ens32: 192.168.1.1
+  system: 192.168.1.1
+disks:
+  fd0:
+    size: 0 bytes
+    size_bytes: 0
+  sda:
+    model: VMware Virtual S
+    size: 20.00 GiB
+    size_bytes: 21474836480
+    vendor: VMware,
+dmi:
+  bios:
+    release_date: 05/20/2014
+    vendor: Phoenix Technologies LTD
+    version: '6.00'
+  board:
+    manufacturer: Intel Corporation
+    product: 440BX Desktop Reference Platform
+    serial_number: None
+  chassis:
+    asset_tag: No Asset Tag
+    type: Other
+  manufacturer: VMware, Inc.
+  product:
+    name: VMware Virtual Platform
+    serial_number: VMware-56 4d 42 d9 45 77 f6 65-c3 6b 04 5d cd 97 78 6a
+    uuid: 564D42D9-4577-F665-C36B-045DCD97786A
+domain: corp.emc.com
+facterversion: 3.1.0
+filesystems: ext2,ext3,ext4
+fqdn: learning.corp.emc.com
+gid: root
+hardwareisa: x86_64
+hardwaremodel: x86_64
+hostname: learning
+id: root
+identity:
+  gid: 0
+  group: root
+  uid: 0
+  user: root
+interfaces: ens32,lo
+ipaddress: 10.30.211.148
+ipaddress6: fe80::20c:29ff:fe97:786a
+ipaddress6_ens32: fe80::20c:29ff:fe97:786a
+ipaddress6_lo: "::1"
+ipaddress_ens32: 10.30.211.148
+ipaddress_lo: 127.0.0.1
+is_pe: false
+is_virtual: true
+kernel: Linux
+kernelmajversion: '3.10'
+kernelrelease: 3.10.0-229.el7.x86_64
+kernelversion: 3.10.0
+load_averages:
+  15m: 0.05
+  1m: 0.01
+  5m: 0.02
+macaddress: 00:0c:29:97:78:6a
+macaddress_ens32: 00:0c:29:97:78:6a
+manufacturer: VMware, Inc.
+memory:
+  swap:
+    available: 4.00 GiB
+    available_bytes: 4293246976
+    capacity: 0.04%
+    total: 4.00 GiB
+    total_bytes: 4294963200
+    used: 1.64 MiB
+    used_bytes: 1716224
+  system:
+    available: 233.34 MiB
+    available_bytes: 244670464
+    capacity: 87.32%
+    total: 1.80 GiB
+    total_bytes: 1929932800
+    used: 1.57 GiB
+    used_bytes: 1685262336
+memoryfree: 233.34 MiB
+memoryfree_mb: 233.3359375
+memorysize: 1.80 GiB
+memorysize_mb: 1840.52734375
+mountpoints:
+  "/":
+    available: 12.32 GiB
+    available_bytes: 13230247936
+    capacity: 19.93%
+    device: "/dev/mapper/vg00-rootvol"
+    filesystem: ext4
+    options:
+    - rw
+    - relatime
+    - data=ordered
+    size: 15.39 GiB
+    size_bytes: 16523845632
+    used: 3.07 GiB
+    used_bytes: 3293597696
+  "/boot":
+    available: 97.28 MiB
+    available_bytes: 102005760
+    capacity: 49.77%
+    device: "/dev/sda1"
+    filesystem: ext2
+    options:
+    - rw
+    - relatime
+    size: 193.69 MiB
+    size_bytes: 203097088
+    used: 96.41 MiB
+    used_bytes: 101091328
+mtu_ens32: 1500
+mtu_lo: 65536
+netmask: 255.255.254.0
+netmask6: 'ffff:ffff:ffff:ffff::'
+netmask6_ens32: 'ffff:ffff:ffff:ffff::'
+netmask6_lo: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+netmask_ens32: 255.255.254.0
+netmask_lo: 255.0.0.0
+network: 10.30.210.0
+network6: 'fe80::'
+network6_ens32: 'fe80::'
+network6_lo: "::1"
+network_ens32: 10.30.210.0
+network_lo: 127.0.0.0
+networking:
+  dhcp: 192.168.1.1
+  domain: corp.emc.com
+  fqdn: learning.corp.emc.com
+  hostname: learning
+  interfaces:
+    ens32:
+      bindings:
+      - address: 10.30.211.148
+        netmask: 255.255.254.0
+        network: 10.30.210.0
+      bindings6:
+      - address: fe80::20c:29ff:fe97:786a
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      dhcp: 192.168.1.1
+      ip: 10.30.211.148
+      ip6: fe80::20c:29ff:fe97:786a
+      mac: 00:0c:29:97:78:6a
+      mtu: 1500
+      netmask: 255.255.254.0
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network: 10.30.210.0
+      network6: 'fe80::'
+    lo:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      bindings6:
+      - address: "::1"
+        netmask: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+        network: "::1"
+      ip: 127.0.0.1
+      ip6: "::1"
+      mtu: 65536
+      netmask: 255.0.0.0
+      netmask6: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+      network: 127.0.0.0
+      network6: "::1"
+  ip: 10.30.211.148
+  ip6: fe80::20c:29ff:fe97:786a
+  mac: 00:0c:29:97:78:6a
+  mtu: 1500
+  netmask: 255.255.254.0
+  netmask6: 'ffff:ffff:ffff:ffff::'
+  network: 10.30.210.0
+  network6: 'fe80::'
+  primary: ens32
+operatingsystem: CentOS
+operatingsystemmajrelease: '7'
+operatingsystemrelease: 7.1.1503
+os:
+  architecture: x86_64
+  family: RedHat
+  hardware: x86_64
+  name: CentOS
+  release:
+    full: 7.1.1503
+    major: '7'
+    minor: '1'
+  selinux:
+    enabled: false
+osfamily: RedHat
+partitions:
+  "/dev/mapper/vg00-rootvol":
+    mount: "/"
+    size: 15.76 GiB
+    size_bytes: 16924016640
+  "/dev/mapper/vg00-swapvol":
+    size: 4.00 GiB
+    size_bytes: 4294967296
+  "/dev/sda1":
+    mount: "/boot"
+    size: 200.00 MiB
+    size_bytes: 209715200
+  "/dev/sda2":
+    size: 19.80 GiB
+    size_bytes: 21264072704
+path: "/usr/bin:/bin:/usr/sbin:/sbin"
+pe_build: 2015.2.2
+pe_concat_basedir: "/opt/puppetlabs/puppet/cache/pe_concat"
+pe_razor_server_version: package pe-razor-server is not installed
+pe_server_version: 2015.2.2
+physicalprocessorcount: 2
+platform_symlink_writable: true
+platform_tag: el-7-x86_64
+processor0: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+processor1: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+processorcount: 2
+processors:
+  count: 2
+  isa: x86_64
+  models:
+  - Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+  - Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+  physicalcount: 2
+productname: VMware Virtual Platform
+puppet_files_dir_present: false
+puppet_vardir: "/opt/puppetlabs/puppet/cache"
+puppetversion: 4.2.2
+root_home: "/root"
+ruby:
+  platform: x86_64-linux
+  sitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
+  version: 2.1.6
+rubyplatform: x86_64-linux
+rubysitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
+rubyversion: 2.1.6
+selinux: false
+serialnumber: VMware-56 4d 42 d9 45 77 f6 65-c3 6b 04 5d cd 97 78 6a
+ssh:
+  ecdsa:
+    fingerprints:
+      sha1: SSHFP 3 1 62fc79d7d35af119e5cbb837155bd8b044587507
+      sha256: SSHFP 3 2 abe0f826d01c701d9a5a6702f3f896f71ce483d1a86aae56560ef1cdea7a602e
+    key: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAgByaVQTvHKZNutf1m2kqLkk5goQafbsYfMlAVoQ35MkG8F3CCVdLUldYHncfriMuPBlE3r7xJ8iwMqZER4+So=
+  ed25519:
+    fingerprints:
+      sha1: SSHFP 4 1 cd68f691583d5b80d680e27337a52e788736490d
+      sha256: SSHFP 4 2 0ae310c7f6d94a14b3d99ec234bb5973cdabe0e5dbc0a3b79b97a616d044fd3f
+    key: AAAAC3NzaC1lZDI1NTE5AAAAIP2nPDLSYJItKhePHcu+prPtJwHBJwG4+5qvRMPbekC9
+  rsa:
+    fingerprints:
+      sha1: SSHFP 1 1 a80f44c54c90b3a2aa2f643fd75342951856c2bd
+      sha256: SSHFP 1 2 e6e0b6d7eb2d94f55c335496ca782c7044192376d13b61bbad19848d90ca4690
+    key: AAAAB3NzaC1yc2EAAAADAQABAAABAQC2gK4VLFK8NNlJa6Dbp1h5BpAMBCXdl2XRgOLk0VdX/Jpkl6vD7D/XtzHKRpgxlyPFCqG9N6FTLPGHuMvsL4Z9k5CT7LHiZYa53ZTwnaG1eQEYZmMHzYgoeCxxFVQshib1hlzIni3zbWbTJwLzOB06hNZXrhuH/gYJ1xoEouyR0swuIDXJwpMV/XDEHCT4env0pi7BL/Tac3EBUlAdDH+t58vsG9RRm+Dv7FQuwdpYECuJLjCOqgnnI4W5m2d317VvKCOV5nRPC9pHM5dhpWQc6Um66cOQGyapAA0WSNE7wMtt1Tj+wIwN904gUldbhoezdh8x3FgFnBCCSDvEHHpb
+sshecdsakey: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAgByaVQTvHKZNutf1m2kqLkk5goQafbsYfMlAVoQ35MkG8F3CCVdLUldYHncfriMuPBlE3r7xJ8iwMqZER4+So=
+sshed25519key: AAAAC3NzaC1lZDI1NTE5AAAAIP2nPDLSYJItKhePHcu+prPtJwHBJwG4+5qvRMPbekC9
+sshfp_ecdsa: |-
+  SSHFP 3 1 62fc79d7d35af119e5cbb837155bd8b044587507
+  SSHFP 3 2 abe0f826d01c701d9a5a6702f3f896f71ce483d1a86aae56560ef1cdea7a602e
+sshfp_ed25519: |-
+  SSHFP 4 1 cd68f691583d5b80d680e27337a52e788736490d
+  SSHFP 4 2 0ae310c7f6d94a14b3d99ec234bb5973cdabe0e5dbc0a3b79b97a616d044fd3f
+sshfp_rsa: |-
+  SSHFP 1 1 a80f44c54c90b3a2aa2f643fd75342951856c2bd
+  SSHFP 1 2 e6e0b6d7eb2d94f55c335496ca782c7044192376d13b61bbad19848d90ca4690
+sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQC2gK4VLFK8NNlJa6Dbp1h5BpAMBCXdl2XRgOLk0VdX/Jpkl6vD7D/XtzHKRpgxlyPFCqG9N6FTLPGHuMvsL4Z9k5CT7LHiZYa53ZTwnaG1eQEYZmMHzYgoeCxxFVQshib1hlzIni3zbWbTJwLzOB06hNZXrhuH/gYJ1xoEouyR0swuIDXJwpMV/XDEHCT4env0pi7BL/Tac3EBUlAdDH+t58vsG9RRm+Dv7FQuwdpYECuJLjCOqgnnI4W5m2d317VvKCOV5nRPC9pHM5dhpWQc6Um66cOQGyapAA0WSNE7wMtt1Tj+wIwN904gUldbhoezdh8x3FgFnBCCSDvEHHpb
+staging_http_get: curl
+swapfree: 4.00 GiB
+swapfree_mb: 4094.359375
+swapsize: 4.00 GiB
+swapsize_mb: 4095.99609375
+system_uptime:
+  days: 0
+  hours: 3
+  seconds: 12254
+  uptime: 3:24 hours
+timezone: UTC
+uptime: 3:24 hours
+uptime_days: 0
+uptime_hours: 3
+uptime_seconds: 12254
+uuid: 564D42D9-4577-F665-C36B-045DCD97786A
+virtual: vmware
+clientcert: learning.puppetlabs.vm
+clientversion: 4.2.2
+clientnoop: false
