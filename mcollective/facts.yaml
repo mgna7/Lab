@@ -48,10 +48,10 @@ dmi:
     name: VMware Virtual Platform
     serial_number: VMware-56 4d 42 d9 45 77 f6 65-c3 6b 04 5d cd 97 78 6a
     uuid: 564D42D9-4577-F665-C36B-045DCD97786A
-domain: corp.emc.com
+domain: puppetlabs.vm
 facterversion: 3.1.0
 filesystems: ext2,ext3,ext4
-fqdn: learning.corp.emc.com
+fqdn: learning.puppetlabs.vm
 gid: root
 hardwareisa: x86_64
 hardwaremodel: x86_64
@@ -63,11 +63,11 @@ identity:
   uid: 0
   user: root
 interfaces: ens32,lo
-ipaddress: 10.30.211.148
+ipaddress: 192.168.0.112
 ipaddress6: fe80::20c:29ff:fe97:786a
 ipaddress6_ens32: fe80::20c:29ff:fe97:786a
 ipaddress6_lo: "::1"
-ipaddress_ens32: 10.30.211.148
+ipaddress_ens32: 192.168.0.112
 ipaddress_lo: 127.0.0.1
 is_pe: false
 is_virtual: true
@@ -76,38 +76,38 @@ kernelmajversion: '3.10'
 kernelrelease: 3.10.0-229.el7.x86_64
 kernelversion: 3.10.0
 load_averages:
-  15m: 0.05
-  1m: 0.01
-  5m: 0.02
+  15m: 0.21
+  1m: 0.11
+  5m: 0.07
 macaddress: 00:0c:29:97:78:6a
 macaddress_ens32: 00:0c:29:97:78:6a
 manufacturer: VMware, Inc.
 memory:
   swap:
     available: 4.00 GiB
-    available_bytes: 4293246976
-    capacity: 0.04%
+    available_bytes: 4294873088
+    capacity: 0.00%
     total: 4.00 GiB
     total_bytes: 4294963200
-    used: 1.64 MiB
-    used_bytes: 1716224
+    used: 88.00 KiB
+    used_bytes: 90112
   system:
-    available: 233.34 MiB
-    available_bytes: 244670464
-    capacity: 87.32%
+    available: 365.05 MiB
+    available_bytes: 382779392
+    capacity: 80.17%
     total: 1.80 GiB
     total_bytes: 1929932800
-    used: 1.57 GiB
-    used_bytes: 1685262336
-memoryfree: 233.34 MiB
-memoryfree_mb: 233.3359375
+    used: 1.44 GiB
+    used_bytes: 1547153408
+memoryfree: 365.05 MiB
+memoryfree_mb: 365.046875
 memorysize: 1.80 GiB
 memorysize_mb: 1840.52734375
 mountpoints:
   "/":
-    available: 12.32 GiB
-    available_bytes: 13230247936
-    capacity: 19.93%
+    available: 12.31 GiB
+    available_bytes: 13213593600
+    capacity: 20.03%
     device: "/dev/mapper/vg00-rootvol"
     filesystem: ext4
     options:
@@ -116,8 +116,8 @@ mountpoints:
     - data=ordered
     size: 15.39 GiB
     size_bytes: 16523845632
-    used: 3.07 GiB
-    used_bytes: 3293597696
+    used: 3.08 GiB
+    used_bytes: 3310252032
   "/boot":
     available: 97.28 MiB
     available_bytes: 102005760
@@ -133,41 +133,41 @@ mountpoints:
     used_bytes: 101091328
 mtu_ens32: 1500
 mtu_lo: 65536
-netmask: 255.255.254.0
+netmask: 255.255.255.0
 netmask6: 'ffff:ffff:ffff:ffff::'
 netmask6_ens32: 'ffff:ffff:ffff:ffff::'
 netmask6_lo: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
-netmask_ens32: 255.255.254.0
+netmask_ens32: 255.255.255.0
 netmask_lo: 255.0.0.0
-network: 10.30.210.0
+network: 192.168.0.0
 network6: 'fe80::'
 network6_ens32: 'fe80::'
 network6_lo: "::1"
-network_ens32: 10.30.210.0
+network_ens32: 192.168.0.0
 network_lo: 127.0.0.0
 networking:
   dhcp: 192.168.1.1
-  domain: corp.emc.com
-  fqdn: learning.corp.emc.com
+  domain: puppetlabs.vm
+  fqdn: learning.puppetlabs.vm
   hostname: learning
   interfaces:
     ens32:
       bindings:
-      - address: 10.30.211.148
-        netmask: 255.255.254.0
-        network: 10.30.210.0
+      - address: 192.168.0.112
+        netmask: 255.255.255.0
+        network: 192.168.0.0
       bindings6:
       - address: fe80::20c:29ff:fe97:786a
         netmask: 'ffff:ffff:ffff:ffff::'
         network: 'fe80::'
       dhcp: 192.168.1.1
-      ip: 10.30.211.148
+      ip: 192.168.0.112
       ip6: fe80::20c:29ff:fe97:786a
       mac: 00:0c:29:97:78:6a
       mtu: 1500
-      netmask: 255.255.254.0
+      netmask: 255.255.255.0
       netmask6: 'ffff:ffff:ffff:ffff::'
-      network: 10.30.210.0
+      network: 192.168.0.0
       network6: 'fe80::'
     lo:
       bindings:
@@ -185,13 +185,13 @@ networking:
       netmask6: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
       network: 127.0.0.0
       network6: "::1"
-  ip: 10.30.211.148
+  ip: 192.168.0.112
   ip6: fe80::20c:29ff:fe97:786a
   mac: 00:0c:29:97:78:6a
   mtu: 1500
-  netmask: 255.255.254.0
+  netmask: 255.255.255.0
   netmask6: 'ffff:ffff:ffff:ffff::'
-  network: 10.30.210.0
+  network: 192.168.0.0
   network6: 'fe80::'
   primary: ens32
 operatingsystem: CentOS
@@ -286,19 +286,19 @@ sshfp_rsa: |-
 sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQC2gK4VLFK8NNlJa6Dbp1h5BpAMBCXdl2XRgOLk0VdX/Jpkl6vD7D/XtzHKRpgxlyPFCqG9N6FTLPGHuMvsL4Z9k5CT7LHiZYa53ZTwnaG1eQEYZmMHzYgoeCxxFVQshib1hlzIni3zbWbTJwLzOB06hNZXrhuH/gYJ1xoEouyR0swuIDXJwpMV/XDEHCT4env0pi7BL/Tac3EBUlAdDH+t58vsG9RRm+Dv7FQuwdpYECuJLjCOqgnnI4W5m2d317VvKCOV5nRPC9pHM5dhpWQc6Um66cOQGyapAA0WSNE7wMtt1Tj+wIwN904gUldbhoezdh8x3FgFnBCCSDvEHHpb
 staging_http_get: curl
 swapfree: 4.00 GiB
-swapfree_mb: 4094.359375
+swapfree_mb: 4095.91015625
 swapsize: 4.00 GiB
 swapsize_mb: 4095.99609375
 system_uptime:
   days: 0
-  hours: 3
-  seconds: 12254
-  uptime: 3:24 hours
+  hours: 0
+  seconds: 1426
+  uptime: 0:23 hours
 timezone: UTC
-uptime: 3:24 hours
+uptime: 0:23 hours
 uptime_days: 0
-uptime_hours: 3
-uptime_seconds: 12254
+uptime_hours: 0
+uptime_seconds: 1426
 uuid: 564D42D9-4577-F665-C36B-045DCD97786A
 virtual: vmware
 clientcert: learning.puppetlabs.vm
